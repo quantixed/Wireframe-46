@@ -1,4 +1,5 @@
 # Pipe Mania
+import pgzrun
 from math import floor
 from pygame import image, Color, Surface
 from random import randint
@@ -90,3 +91,4 @@ def on_mouse_move(pos):
         if pos[0] < panelPosition[0] or pos[1] < panelPosition[1] or tileMouse[0] >= w or tileMouse[1] >= h:
             tileMouse = (-1, -1) # mouse outside panel
 
+pgzrun.go()
